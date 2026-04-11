@@ -6,72 +6,120 @@
 <link rel="icon" href="favicon.png">
 
 <style>
-body { margin:0; font-family: Arial; background:#f4f6f9; }
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f4f6f9;
+}
 
+/* NAVBAR */
 .navbar {
   background:#0b3d91;
   color:white;
   padding:15px 30px;
   display:flex;
   justify-content:space-between;
+  align-items:center;
 }
 
+.navbar img {
+  height:40px;
+}
+
+.nav-links a {
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+/* HERO */
 .hero {
-  background:linear-gradient(#0b3d91,#1e5ed6);
+  background:linear-gradient(to right,#0b3d91,#1e5ed6);
   color:white;
   text-align:center;
-  padding:60px;
+  padding:80px 20px;
 }
 
-.section { padding:40px; }
+.hero h1 {
+  font-size:36px;
+}
+
+/* SECTION */
+.section {
+  padding:40px 30px;
+}
 
 .card {
   background:white;
-  padding:20px;
+  padding:25px;
   border-radius:10px;
-  margin-bottom:20px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
+/* FOOTER */
 .footer {
   background:#111;
   color:white;
   text-align:center;
   padding:20px;
 }
+
+.footer a {
+  color:#ccc;
+  margin:0 10px;
+  text-decoration:none;
+}
 </style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <div class="navbar">
-<div>
-<img src="favicon.png" height="35">
+<div style="display:flex;align-items:center;">
+<img src="favicon.png">
+<strong style="margin-left:10px;">AG Chhattisgarh</strong>
 </div>
 
-<div>
-<a href="index.html" style="color:white;margin:10px;">Home</a>
-<a href="former-ags.html" style="color:white;margin:10px;">Former AGs</a>
-<a href="contact.html" style="color:white;margin:10px;">Contact</a>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="former-ags.html">Former AGs</a>
+<a href="contact.html">Contact</a>
 </div>
 </div>
 
+<!-- HERO -->
 <div class="hero">
 <h1>Shri Vivek Sharma</h1>
 <p>Hon’ble Advocate General, Chhattisgarh</p>
 </div>
 
+<!-- CONTENT -->
 <div class="section">
 <div class="card">
 <h2>Role & Functions</h2>
-<p>The Advocate General is the highest law officer of the State under Article 165 of the Constitution of India.</p>
+<p>
+The Advocate General is the highest law officer of the State under Article 165 of the Constitution of India.
+He advises the Government and represents the State in legal matters before courts.
+</p>
 </div>
 </div>
 
+<!-- FOOTER -->
 <div class="footer">
-<a href="privacy-policy.html">Privacy</a> |
-<a href="terms.html">Terms</a> |
+<p>© Office of Advocate General, Chhattisgarh</p>
+
+<div>
+<a href="privacy-policy.html">Privacy</a>
+<a href="terms.html">Terms</a>
 <a href="website-policy.html">Policy</a>
 </div>
+
+</div>
+
+</body>
+</html>
 
 </body>
 </html>
